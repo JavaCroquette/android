@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#CE1213"
+        android:minHeight="?attr/actionBarSize"
+        android:textAlignment="center"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Quiz" />
+
+    <ImageButton
+        android:id="@+id/moviesButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@android:string/VideoView_error_button"
+        android:onClick="onMoviesClick"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/avatar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.440"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent="0.45"
+        tools:src="@drawable/avatar" />
+
+    <ImageButton
+        android:id="@+id/seriesButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@android:string/VideoView_error_button"
+        android:onClick="onSeriesClick"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dovakhiin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.440"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintWidth_percent="0.45"
+        tools:src="@drawable/dovakhiin" />
+
+    <ImageButton
+        android:id="@+id/videoGamesButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@android:string/VideoView_error_button"
+        android:onClick="onVideoGamesClick"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dovakhiin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/moviesButton"
+        app:layout_constraintHeight_percent="0.440"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moviesButton"
+        app:layout_constraintVertical_bias="1.0"
+        tools:src="@drawable/dovakhiin" />
+
+    <ImageButton
+        android:id="@+id/blaxButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/blax"
+        android:contentDescription="@android:string/VideoView_error_button"
+        android:onClick="onBlaxClick"
+        android:scaleType="centerCrop"
+        android:src="@drawable/blax"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.440"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintWidth_percent="0.45"
+        tools:src="@drawable/blax" />
+
+    <ImageButton
+        android:id="@+id/randomButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:backgroundTint="#00FFFFFF"
+        android:contentDescription="@android:string/VideoView_error_button"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/quizz_random"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintWidth_percent="0.5"
+        tools:src="@drawable/quizz_random" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
